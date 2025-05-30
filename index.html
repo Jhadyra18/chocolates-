@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>ChocoDelicias</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff8f0;
+    }
+
+    header {
+      background: #6b3e26;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    /* Efecto de expansión del título */
+    h1 {
+      transition: transform 0.3s ease, letter-spacing 0.3s ease, color 0.3s ease;
+    }
+
+    h1:hover {
+      transform: scale(1.1);
+      letter-spacing: 2px;
+      color: #ffd700;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+    }
+
+    .product {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .product img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    .btn {
+      background: #a0522d;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      margin-top: 0.5rem;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>ChocoDelicias</h1>
+  <p>Los mejores chocolates artesanales</p>
+</header>
+
+<div class="container">
+  <div class="product">
+    <img src="https://mejorconsalud.as.com/wp-content/uploads/2014/10/chocolate-negro-barra-768x512.jpg" alt="Chocolate Negro">
+    <h3>Chocolate Negro 70%</h3>
+    <p>$4.99</p>
+    <button class="btn">Comprar</button>
+  </div>
+
+  <div class="product">
+    <img src="https://www.aki.com.ec/wp-content/uploads/2024/12/items2Figm2F1000x10002F7861042534266-1-7.jpg" alt="Chocolate con leche">
+    <h3>Chocolate con Leche</h3>
+    <p>$3.99</p>
+    <button class="btn">Comprar</button>
+  </div>
+
+  <div class="product">
+    <img src="https://cadenaser.com/resizer/v2/PRNBVO2NF5NTZPSQTK6HMDLVRQ.jpg?auth=4d982ac220a5dadf9628b86c00691d6ca3b97a5348cc561008b82e638801590e&quality=70&width=990&height=556&smart=true" alt="Chocolate Blanco">
+    <h3>Chocolate Blanco</h3>
+    <p>$4.49</p>
+    <button class="btn">Comprar</button>
+  </div>
+
+  <!-- NUEVO PRODUCTO: Trufas -->
+  <div class="product">
+    <img src="https://content-cocina.lecturas.com/medio/2022/01/12/trufas_de_chocolate_al_brandy_con_avellanas_39f900ae_1200x1200.jpg" alt="Trufas de Chocolate">
+    <h3>Trufas de Chocolate</h3>
+    <p>$5.99</p>
+    <button class="btn">Comprar</button>
+  </div>
+</div>
+
+</body>
+</html>
